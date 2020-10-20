@@ -15,6 +15,7 @@
 		B231CCF8252537D900EA4DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B231CCF6252537D900EA4DBD /* LaunchScreen.storyboard */; };
 		B231CD03252537D900EA4DBD /* StopLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CD02252537D900EA4DBD /* StopLightTests.swift */; };
 		B231CD0E252537D900EA4DBD /* StopLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CD0D252537D900EA4DBD /* StopLightUITests.swift */; };
+		B2B443A4252BF25600E2A774 /* RoundedLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B443A3252BF25600E2A774 /* RoundedLight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B231CD09252537D900EA4DBD /* StopLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B231CD0D252537D900EA4DBD /* StopLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightUITests.swift; sourceTree = "<group>"; };
 		B231CD0F252537D900EA4DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B443A3252BF25600E2A774 /* RoundedLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B231CCEB252537D600EA4DBD /* AppDelegate.swift */,
 				B231CCED252537D600EA4DBD /* SceneDelegate.swift */,
 				B231CCEF252537D600EA4DBD /* ViewController.swift */,
+				B2B443A3252BF25600E2A774 /* RoundedLight.swift */,
 				B231CCF1252537D600EA4DBD /* Main.storyboard */,
 				B231CCF4252537D900EA4DBD /* Assets.xcassets */,
 				B231CCF6252537D900EA4DBD /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				B231CCF0252537D600EA4DBD /* ViewController.swift in Sources */,
 				B231CCEC252537D600EA4DBD /* AppDelegate.swift in Sources */,
+				B2B443A4252BF25600E2A774 /* RoundedLight.swift in Sources */,
 				B231CCEE252537D600EA4DBD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6FDH9RHXZJ;
+				DEVELOPMENT_TEAM = N8TGLP7Q94;
 				INFOPLIST_FILE = StopLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6FDH9RHXZJ;
+				DEVELOPMENT_TEAM = N8TGLP7Q94;
 				INFOPLIST_FILE = StopLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
