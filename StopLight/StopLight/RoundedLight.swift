@@ -19,10 +19,14 @@ class RoundedLight: UIView {
         super.init(coder: aDecoder)
     }
 
+    func setCornerRadius() {
+        self.layer.cornerRadius = bounds.size.width * 0.5
+    }
+
     override func layoutSubviews() {
         super.layoutSubviews()
         //
-        self.layer.cornerRadius = bounds.size.width * 0.5
+        setCornerRadius()
     }
 
 }
