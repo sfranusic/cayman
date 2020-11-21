@@ -32,6 +32,28 @@ class StopLightUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testBackgrounding() {
+        // Launch the application.
+        let app = XCUIApplication()
+        app.launch()
+
+        let launchExpectation = XCTestExpectation(description: "App should launch after having been placed in the background.")
+        let mainView = XCUIApplication().otherElements["mainStopLightView"]
+
+        // Move app to background.
+        XCUIDevice.shared.press(.home)
+
+        // Launch app again after some amount of time and then fulfill expectation.
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+            app.launch()
+            launchExpectation.fulfill()
+        }
+
+        // Wait for launch expectation and then check that main view is hittable.
+        wait(for: [launchExpectation], timeout: 10)
+        XCTAssert(mainView.isHittable)
+    }
+
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
