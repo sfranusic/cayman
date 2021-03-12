@@ -48,16 +48,16 @@ class ViewController: UIViewController {
         turnOnlight(light: light)
         switch  light {
         case .red:
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.runLights(light: .yellow)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                self.runLights(light: .green)
             }
         case .yellow:
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.runLights(light: .green)
+                self.runLights(light: .red)
             }
         case .green:
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.runLights(light: .red)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+                self.runLights(light: .yellow)
             }
         }
     }
