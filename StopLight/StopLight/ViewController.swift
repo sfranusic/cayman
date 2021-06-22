@@ -34,16 +34,15 @@ class ViewController: UIViewController {
             self.redLightView.backgroundColor = .black
             self.yellowLightView.backgroundColor = .black
             self.greenLightView.backgroundColor = .black
-        } completion: { _ in
-            UIView.animate(withDuration: 0.5) {
-                switch  light {
-                case .red:
-                    self.redLightView.backgroundColor = UIColor.red
-                case .yellow:
-                    self.yellowLightView.backgroundColor = UIColor.yellow
-                case .green:
-                    self.greenLightView.backgroundColor = .green
-                }
+        }
+        UIView.animate(withDuration: 0.5) {
+            switch  light {
+            case .red:
+                self.redLightView.backgroundColor = UIColor.red
+            case .yellow:
+                self.yellowLightView.backgroundColor = UIColor.yellow
+            case .green:
+                self.greenLightView.backgroundColor = .green
             }
         }
     }
