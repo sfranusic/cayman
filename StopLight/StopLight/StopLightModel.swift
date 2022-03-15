@@ -3,14 +3,14 @@
 
 import SwiftUI
 
+enum LightType {
+    case red, yellow, green
+}
+
 class StopLight: ObservableObject {
     @Published var red: Color = .red
     @Published var yellow: Color = .yellow
     @Published var green: Color = .green
-
-    enum LightType {
-        case red, yellow, green
-    }
 
     func turnLightsOff() {
         red = .clear
