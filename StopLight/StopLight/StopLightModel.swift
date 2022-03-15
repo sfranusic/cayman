@@ -4,37 +4,37 @@
 import SwiftUI
 
 class StopLight: ObservableObject {
-    @Published var redLight: Color = .black
-    @Published var yellowLight: Color = .black
-    @Published var greenLight: Color = .black
+    @Published var red: Color = .red
+    @Published var yellow: Color = .yellow
+    @Published var green: Color = .green
 
     enum LightType {
         case red, yellow, green
     }
 
     func turnLightsOff() {
-        redLight = .black
-        yellowLight = .black
-        greenLight = .black
+        red = .clear
+        yellow = .clear
+        green = .clear
     }
 
-    func runLights(initialLight: LightType) {
+    func runLights(initial: LightType) {
         turnLightsOff()
-        switch initialLight {
+        switch initial {
         case .red:
-            redLight = .red
+            red = .red
             DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                self.runLights(initialLight: .green)
+                self.runLights(initial: .green)
             }
         case .yellow:
-            yellowLight = .yellow
+            yellow = .yellow
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.runLights(initialLight: .red)
+                self.runLights(initial: .red)
             }
         case .green:
-            greenLight = .green
+            green = .green
             DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
-                self.runLights(initialLight: .yellow)
+                self.runLights(initial: .yellow)
             }
         }
     }

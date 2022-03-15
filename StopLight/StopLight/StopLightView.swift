@@ -7,15 +7,15 @@ struct StopLightView: View {
     var body: some View {
         VStack {
             Circle()
-                .foregroundColor(stopLight.redLight)
+                .foregroundColor(stopLight.red)
             Circle()
-                .foregroundColor(stopLight.yellowLight)
+                .foregroundColor(stopLight.yellow)
             Circle()
-                .foregroundColor(stopLight.greenLight)
+                .foregroundColor(stopLight.green)
         }
         .foregroundColor(.black)
         .onAppear {
-            self.stopLight.runLights(initialLight: .red)
+            self.stopLight.runLights(initial: .red)
         }
     }
 
