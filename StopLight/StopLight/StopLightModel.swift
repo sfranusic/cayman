@@ -1,6 +1,5 @@
 //  Created by Sam Franusic on 3/15/22.
 
-
 import SwiftUI
 
 enum LightType {
