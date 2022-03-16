@@ -3,23 +3,23 @@
 import SwiftUI
 
 struct StopLightView: View {
-    @StateObject var stopLight = StopLight()
+    @StateObject var stopLight = StopLightModel()
     var body: some View {
         VStack {
             Circle()
-                .foregroundColor(stopLight.red)
+                .foregroundColor(stopLight.lights.red)
             Circle()
-                .foregroundColor(stopLight.yellow)
+                .foregroundColor(stopLight.lights.yellow)
             Circle()
-                .foregroundColor(stopLight.green)
+                .foregroundColor(stopLight.lights.green)
         }
-        .foregroundColor(.black)
         .onAppear {
             self.stopLight.runLights(initial: .red)
         }
-        .animation(.default)
-    }
+        .animation(.default, value: stopLight.lights)
+        .background(Color.black)
 
+    }
 }
 
 struct StopLightView_Previews: PreviewProvider {
