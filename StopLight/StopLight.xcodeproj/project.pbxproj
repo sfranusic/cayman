@@ -16,6 +16,8 @@
 		B231CD03252537D900EA4DBD /* StopLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CD02252537D900EA4DBD /* StopLightTests.swift */; };
 		B231CD0E252537D900EA4DBD /* StopLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231CD0D252537D900EA4DBD /* StopLightUITests.swift */; };
 		B2B443A4252BF25600E2A774 /* RoundedLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B443A3252BF25600E2A774 /* RoundedLight.swift */; };
+		B2F4987727E10AE600004A8C /* StopLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F4987627E10AE600004A8C /* StopLightView.swift */; };
+		B2F4987B27E12DEB00004A8C /* StopLightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F4987A27E12DEB00004A8C /* StopLightModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B231CD0D252537D900EA4DBD /* StopLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightUITests.swift; sourceTree = "<group>"; };
 		B231CD0F252537D900EA4DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B443A3252BF25600E2A774 /* RoundedLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLight.swift; sourceTree = "<group>"; };
+		B2F4987627E10AE600004A8C /* StopLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightView.swift; sourceTree = "<group>"; };
+		B2F4987A27E12DEB00004A8C /* StopLightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLightModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				B231CCF4252537D900EA4DBD /* Assets.xcassets */,
 				B231CCF6252537D900EA4DBD /* LaunchScreen.storyboard */,
 				B231CCF9252537D900EA4DBD /* Info.plist */,
+				B2F4987627E10AE600004A8C /* StopLightView.swift */,
+				B2F4987A27E12DEB00004A8C /* StopLightModel.swift */,
 			);
 			path = StopLight;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 			files = (
 				B231CCF0252537D600EA4DBD /* ViewController.swift in Sources */,
 				B231CCEC252537D600EA4DBD /* AppDelegate.swift in Sources */,
+				B2F4987B27E12DEB00004A8C /* StopLightModel.swift in Sources */,
 				B2B443A4252BF25600E2A774 /* RoundedLight.swift in Sources */,
+				B2F4987727E10AE600004A8C /* StopLightView.swift in Sources */,
 				B231CCEE252537D600EA4DBD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
