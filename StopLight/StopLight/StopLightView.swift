@@ -17,6 +17,7 @@ struct StopLightView: View {
         .onAppear {
             self.stopLight.runLights(initial: .red)
         }
+        .animation(.default)
     }
 
 }
